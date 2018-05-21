@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cont1 {
+    display: flex;
+    height: 25vh;
+}
+
+.cont2 {
+
+    display: flex;
+    height: 50vh;
+}
+
+.cont4 {
+    display: flex;
+    height: 25vh;
+}
+.block1 {
+    background: orangered;
+    flex-basis: 100%;
+    overflow: hidden;
+}
+
+.block2 {
+    flex: 0 0 55%;
+    background: aquamarine;
+    overflow: hidden;
+
+}
+
+.block31 {
+    flex-basis: 50%;
+    overflow: hidden;
+}
+
+.block3 {
+    flex-basis: 100%;
+    background: burlywood;
+    height: 50%;
+    overflow: hidden;
+}
+
+.block4 {
+
+    flex: 0 0 25%;
+    background: darkturquoise;
+    overflow: hidden;
+}
+
+.block5 {
+    flex-basis: 50%;
+    background: chartreuse;
+    overflow: hidden;
+}
+
+.block6 {
+    flex-basis: 50%;
+    background: gold;
+    overflow: hidden;
+}
+
+.block7 {
+    flex-basis: 100%;
+    background: hotpink;
+    overflow: hidden;
+    height: 25vh;
+}
+@media only screen and (max-width: 1200px) {
+
+    .cont2,.cont4, .block31 {
+        height: auto;
+
+    }
+}
+@media only screen and (max-width: 980px) {
+
+    .cont1, .cont2, .block1, .block2, .block31, .block3, .block4, .block5, .block6, .block7 {
+
+        display: list-item;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+
+    }
+
+    .cont1 {
+        height: auto;
+
+    }
+
+    .cont2 {
+        height: inherit;
+
+    }
+}
+    @media only screen and (max-width: 650px) {
+
+    .cont1,.cont2,.cont4,.block1,.block2,.block31,.block3,.block4,.block5,.block6,.block7{
+
+        display: list-item;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+
+    }
+
+    .cont1 {
+        height: auto;
+
+    }
+    .cont2 {
+        height: inherit;
+
+    }
+}
