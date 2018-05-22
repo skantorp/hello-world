@@ -69,19 +69,20 @@ heigth:100%;
     overflow: hidden;
     heigth:100%;
 }
-@media only screen and (max-width: 1300px)
-{
-    .cont2,.cont4,.block31,.block2,.block3,.block4,.block5,.block6{
-    height: auto;
+@media only screen and (max-width: 1200px) {
+
+    .cont2,.cont4, .block31 {
+        height: auto;
+
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 980px) {
 
     .cont1, .cont2, .block1, .block2, .block31, .block3, .block4, .block5, .block6, .block7 {
 
         display: list-item;
         width: 100%;
-        height: 100%;
+        height: auto;
         flex-direction: column;
         flex-wrap: wrap;
         -moz-flex-direction: column;
@@ -99,13 +100,13 @@ heigth:100%;
 
     }
 }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 650px) {
 
     .cont1,.cont2,.cont4,.block1,.block2,.block31,.block3,.block4,.block5,.block6,.block7{
 
         display: list-item;
         width: 100%;
-        height: 100%;
+        height: auto;
         flex-direction: column;
         flex-wrap: wrap;
         -moz-flex-direction: column;
