@@ -69,20 +69,14 @@ heigth:100%;
     overflow: hidden;
     heigth:100%;
 }
-@media only screen and (max-width: 1200px) {
 
-    .cont2,.cont4, .block31 {
-        height: auto;
-
-    }
-}
 @media only screen and (max-width: 800px) {
 
     .cont1, .cont2, .block1, .block2, .block31, .block3, .block4, .block5, .block6, .block7 {
 
         display: list-item;
         width: 100%;
-        height: auto;
+        height: 100%;
         flex-direction: column;
         flex-wrap: wrap;
         -moz-flex-direction: column;
@@ -106,7 +100,7 @@ heigth:100%;
 
         display: list-item;
         width: 100%;
-        height: auto;
+        height: 100%;
         flex-direction: column;
         flex-wrap: wrap;
         -moz-flex-direction: column;
