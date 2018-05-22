@@ -76,7 +76,7 @@ heigth:100%;
 
     }
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 800px) {
 
     .cont1, .cont2, .block1, .block2, .block31, .block3, .block4, .block5, .block6, .block7 {
 
@@ -100,7 +100,7 @@ heigth:100%;
 
     }
 }
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 600px) {
 
     .cont1,.cont2,.cont4,.block1,.block2,.block31,.block3,.block4,.block5,.block6,.block7{
 
