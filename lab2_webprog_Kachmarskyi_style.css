@@ -21,16 +21,18 @@
     background: orangered;
     flex-basis: 100%;
     overflow: hidden;
+    heigth:100%;
 }
 
 .block2 {
-    flex: 0 0 25vw;
+    flex: 0 0 342px;
     background: aquamarine;
     overflow: hidden;
-
+heigth:100%;
 }
 
 .block31 {
+    heigth:100%;
     flex-basis: 50%;
     overflow: hidden;
 }
@@ -43,8 +45,8 @@
 }
 
 .block4 {
-
-    flex: 0 0 25vw;
+heigth:100%;
+    flex: 0 0 341px;
     background: darkturquoise;
     overflow: hidden;
 }
@@ -65,7 +67,7 @@
     flex-basis: 100%;
     background: hotpink;
     overflow: hidden;
-    height: 25vh;
+    heigth:100%;
 }
 @media only screen and (max-width: 1200px) {
 
