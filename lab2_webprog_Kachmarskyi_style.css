@@ -71,7 +71,7 @@ heigth:100%;
 }
 @media only screen and (max-width: 1300px)
 {
-    .block2,.block3,.block4,.block5,.block6{
+    .cont2,.cont4,.block31,.block2,.block3,.block4,.block5,.block6{
     height: auto;
     }
 }
