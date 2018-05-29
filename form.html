@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/lab3stl.css" media="screen">
+    <script src="scripts/formsc.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <h1 >ФК Ліверпуль</h1>
+    <img id="logotip" alt="Логотип" src="styles/backgr/3.png"/>
+</header>
+<main id="forma">
+    <nav>
+        <a href="main.html">Головна</a>|
+        <a href="xmlshit.html">Зал слави</a>|
+        <a href="canvas.html">Творчість</a>
+    </nav>
+    <section>
+        <form name="myForm" method="post" >
+            Ім'я:<br> <input type="text" name="imya" required="" title="Введіть ваше ім'я"><br>
+            Прізвище:<br> <input type="text" name="prizw" required="" title="Введіть ваше прізвище"><br>
+            Адреса електронної пошти: <br><input type="email" placeholder="aaa@example.com" name="poshta" required="" title="Введіть адресу вашої електронної пошти"><br>
+            Вік:<br>  <p><input type="date" name="created" required="" max="2000-05-29"></p><br>
+            Номер телефону:<br><input type="tel" name="quantity"  required="" placeholder="+380xxxxxxxxx" title="Введіть ваш номер телефону" pattern="+380[0-9]{9}"><br>
+            <fieldset>
+                <legend>Виберіть те, чим хочете зайнятися в Ліверпулі</legend>
+                <input type="checkbox">Відвідати домашній матч Ліверпуля<br>
+                <img width=30% height=15% src="match.jpg" alt="Мохамед Салах забиває 1-й гол у ворота Роми в півфіналі ЛЧ 2017/2018"><br>
+                <input type="checkbox" >Побувати на Енфілді і відвідати клубний музей<br>
+                <img width=30% height=15% src="enfild.jpg" alt="Anfield"><br>
+                <input type="checkbox" >Прогулятися містом і відвідати визначні місця<br>
+                <img width=30% height=15% src="liver.jpg" alt="Вечірнє місто"><br>
+            </fieldset>
+            <br/>
+
+            <p>Виберіть фотографію</p>
+            <input type="file" id="images" accept="image/*" multiple="" required="">
+            <ol></ol>
+            <input id="sumb" type="submit" value="Зарєструватися" >
+        </form>
+    </section>
+</main>
+</body>
+</html>

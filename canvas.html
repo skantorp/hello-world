@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/lab3stl.css" media="screen">
+    <script src="scripts/dragndrop.js"></script>
+    <script src="scripts/canvassc.js"></script>
+    <script type = "text/javascript" src = "scripts/paint.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body background="">
+<header>
+    <h1 >ФК Ліверпуль</h1>
+    <img id="logotip" alt="Логотип" src="styles/backgr/3.png"/>
+</header>
+<main id="forma">
+
+
+    <section >
+        <nav>
+            <a href="main.html">Головна</a>|
+            <a href="form.html">Реєстрація на поїздку</a>|
+            <a href="xmlshit.html">Зал слави</a>
+        </nav>
+        <h3>Тут ви можете змінити логотип сайту</h3>
+        <div class="stylebox">
+
+            <img src="styles/backgr/1.png" alt="red" id='l1'><br>
+            <img src="styles/backgr/2.png" alt="green" id='l2' ><br>
+            <img src="styles/backgr/3.png" alt="blue" id='l3' ><br>
+            <img src="styles/backgr/4.png" alt="yellow" id='l4' >
+            <div class="drop"></div>
+        </div>
+        <br/>
+        <h3>Малюнок одного криворукого хлопчика</h3>
+        <canvas id="bcanvas" width="400" height="300"
+                style="border:1px solid black;">
+            Ваш браузер не підтримує елемент канвас. Співчуваю
+        </canvas>
+<h3>Намалюйте, що хочете</h3>
+        <div id = "wrapper">
+            <canvas id = "tablet" width = "500" height = "400"></canvas>
+        </div>
+
+    </section>
+
+</main>
+</body>
+</html>
