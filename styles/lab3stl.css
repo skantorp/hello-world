@@ -46,7 +46,7 @@ nav {
    float: right;
    height: 100px;
    width: 30%;
-position: absolute;
+   position: relative;
 }
 .stylebox {
    width: 95%;
