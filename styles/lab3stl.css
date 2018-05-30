@@ -50,7 +50,7 @@ nav {
 }
 .stylebox {
    width: 95%;
-   height: 350px;
+   height: 450px;
    border: 1px solid black;
    border-image:  8 stretch;
    border-width: 4px;
