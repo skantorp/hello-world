@@ -1,9 +1,0 @@
-language: generic
-deploy:
-  provider: s3
-  access_key_id: AKIAIURA4CCJZLQRETWA
-  secret_access_key: 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
-  bucket: amazontogithub-outputbucket-1kv2ftflpwuf8
-  on:
-    repo: skantorp/hello-world
-  acl: public_read
