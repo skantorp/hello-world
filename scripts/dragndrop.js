@@ -52,29 +52,28 @@ var drag= function () {
             dragelements.onmouseup = null;
             if (e.pageX > drophere.offsetLeft && e.pageX < drophere.offsetLeft + drophere.offsetWidth && e.pageY > drophere.offsetTop && e.pageY < drophere.offsetHeight + drophere.offsetTop) {//изменение элементов станицы при попадании одного из элементов в drophere
                 if (dragelements === logo1) {
-                    document.images['logotip'].src = 'styles/backgr/1.png';
+                    document.getElementById('forma').style.background = " url('styles/backgr/1.png') no-repeat center ";
                     logo1.style.position = 'relative';
-                    logo1.style.top = '15px';
-                    logo1.style.left = '15px';
+                    logo1.style.top = '10px';
+                    logo1.style.left = '10px';
                 }
                 if (dragelements === logo2) {
-                    document.images['logotip'].src = 'styles/backgr/2.png';
+                    document.getElementById('forma').style.background = " url('styles/backgr/2.png') no-repeat center ";
                     logo2.style.position = 'relative';
-                    logo2.style.top = '15px';
-                    logo2.style.left = '15px';
+                    logo2.style.top = '10px';
+                    logo2.style.left = '10px';
                 }
                 if (dragelements === logo3) {
-                    document.images['logotip'].src = 'styles/backgr/3.png';
-
+                    document.getElementById('forma').style.background = " url('styles/backgr/3.png') no-repeat center ";
                     logo3.style.position = 'relative';
-                    logo3.style.top = '15px';
-                    logo3.style.left = '15px';
+                    logo3.style.top = '10px';
+                    logo3.style.left = '10px';
                 }
                 if (dragelements === logo4) {
-                    document.images['logotip'].src = 'styles/backgr/4.png';
+                    document.getElementById('forma').style.background = " url('styles/backgr/4.png') no-repeat center ";
                     logo4.style.position = 'relative';
-                    logo4.style.top = '15px';
-                    logo4.style.left = '15px';
+                    logo4.style.top = '10px';
+                    logo4.style.left = '10px';
                 }
             }
         };
@@ -89,14 +88,14 @@ var drag= function () {
         logo4.style.position = 'relative';
         logo2.style.position = 'relative';
         logo3.style.position = 'relative';
-        logo1.style.left = '15px';
-        logo4.style.left = '15px';
-        logo2.style.left = '15px';
-        logo3.style.left = '15px';
-        logo1.style.top = '15px';
-        logo4.style.top = '15px';
-        logo2.style.top = '15px';
-        logo3.style.top = '15px';
+        logo1.style.left = '10px';
+        logo4.style.left = '10px';
+        logo2.style.left = '10px';
+        logo3.style.left = '10px';
+        logo1.style.top = '10px';
+        logo4.style.top = '10px';
+        logo2.style.top = '10px';
+        logo3.style.top = '10px';
     }
 };
 //запуск скрипта при запуску сторінки
