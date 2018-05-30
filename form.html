@@ -40,7 +40,12 @@
 
             <p>Виберіть фотографію</p>
             <input type="file" id="images" accept="image/*" multiple="" required="">
-            <ol></ol>
+            <ol></ol><div class="fileUpload  btn-primary">
+                <span>Виберіть ваше фото</span>
+                <input id="upload" type="file" class="upload" required=""/>
+            </div>
+            <div id="preview" class="prev"><img id="previewImg" src="#" alt="preview" ></div>
+            <div>
             <input id="sumb" type="submit" value="Зарєструватися" >
         </form>
     </section>
