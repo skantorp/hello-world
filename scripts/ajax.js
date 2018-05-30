@@ -4,7 +4,7 @@ var winload= function () {
     var s = document.getElementById("scorers");
     var c = document.getElementById("cups");
 
-    function createreq() {
+    function createreq() {//функція для створення аякс-запиту
         var res = false;
         if (window.XMLHttpRequest) {
             res = new XMLHttpRequest();
@@ -15,14 +15,14 @@ var winload= function () {
                 res = new ActiveXObject("Msxml2.XMLHTTP");
             } else {
                 res = false;
-                alert("РќРµРІРѕР·РјРѕР¶РЅРѕ РѕС‚РїСЂР°РІРёС‚СЊ Р·Р°РїСЂРѕСЃ!");
+                alert("Не вдалося створити аякс-запит. Співчуваю");
             }
         }
         return res;
     }
 
-    var xhttp = createreq();
-    a.onclick = function () {
+    var xhttp = createreq();//створення запиту
+    a.onclick = function () {//дії, що відбуваються при натисканні кнопки
 
         xhttp.open('GET', "forajax/ynwa.txt", false);
         xhttp.send();
@@ -31,6 +31,7 @@ var winload= function () {
         } else {
             var anthem = document.getElementById('ggg');
             anthem.innerHTML = xhttp.responseText.replace(/\n/g, '<br />');
+            a.disabled=true;
         }
     };
     var xhttp1 = createreq();
@@ -41,7 +42,6 @@ var winload= function () {
         if (xhttp1.status != 200) {
             alert(xhttp1.status + ': ' + xhttp1.statusText);
         } else {
-            if (!y) {
                 var data = JSON.parse(xhttp1.responseText);
                 var scorers = document.getElementById('goals');
                 var row = scorers.insertRow(0);
@@ -59,10 +59,11 @@ var winload= function () {
                     cell.innerHTML = data[i].played;
                     cell = row.insertCell(2);
                     cell.innerHTML = data[i].scored;
-                    y = true;
-                }
-            }
 
+
+                }
+
+            s.disabled=true;
         }
     };
     var xhttp2 = createreq();
@@ -87,13 +88,13 @@ var winload= function () {
                 cell = row.insertCell(1);
                 cell.innerHTML = x[i].getElementsByTagName("amount")[0].childNodes[0].nodeValue;
             }
-
+c.disabled=true;
         }
     }
 }
 if (window.addEventListener) {
     window.addEventListener('load', winload);
 } else {
-    //for ie 8 because this browser doesn't understand anything
+
     window.attachEvent('onload', winload);
 }
