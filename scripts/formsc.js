@@ -1,4 +1,3 @@
-
 function SendTheImage(){//для виведення зменшеної копії зображення
     images.onchange = function() {
         var ul = document.getElementsByTagName('ol')[0];
