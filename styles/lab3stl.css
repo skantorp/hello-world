@@ -57,6 +57,8 @@ nav {
 }
 #bcanvas{
    background: aliceblue;
+   width:400; height:300;
+   border:1px solid black;
 }
 footer{
    margin-left: 10px;
@@ -119,4 +121,7 @@ width:60vw; height:70vw;
 }
 #l4{
 width:70vw; height:70vw;
+}
+#tablet{
+width :500; height :400;
 }
